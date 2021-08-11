@@ -9,6 +9,6 @@ async def start(client, message):
         InlineKeyboardButton("Updates", url="https://t.me/botcodesforyou"),
         InlineKeyboardButton("Support Group", url="https://t.me/codingdiscuss")
      ]])
-    welcomed = f"Hey <b>{message.from_user.first_name}\n\nI'm A Simple YouTube Video Downloader Bot With YouTube Video Thumbnail Support.\n\nPlease Send Me Any YouTube Video Link, I Can Upload It To Telegram As File, Audio Or Video Format.\n\nIf Found Any Bugs Then, You Can Report In Our Support Group !\n\nClick On Help Button For More Details....</b>"
+    welcomed = f"Hey <b>{message.from_user.first_name}\n\nI'm A Simple YouTube Video Downloader Bot With YouTube Video Thumbnail Support.\n\nPlease Send Me Any YouTube Video Link, I Can Upload It To Telegram As File, Audio Or Video Format.\n\nIf Found Any Bugs Then, You Can Report In Our Support Group !\n\nClick On /help For More Details....</b>"
     await message.reply_text(welcomed, reply_markup=joinButton)
     raise StopPropagation
