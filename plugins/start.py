@@ -4,7 +4,6 @@ from pyrogram import Client, Filters, StopPropagation, InlineKeyboardButton, Inl
 @Client.on_message(Filters.command(["start"]), group=-2)
 async def start(client, message):
     # return
-PglRobot_IMG = "https://telegra.ph/file/f1d7b30b05ba9f0dbf4e5.jpg"
 
     
     joinButton = InlineKeyboardMarkup([[
@@ -12,8 +11,10 @@ PglRobot_IMG = "https://telegra.ph/file/f1d7b30b05ba9f0dbf4e5.jpg"
         InlineKeyboardButton("Updates", url="https://t.me/botcodesforyou"),
         InlineKeyboardButton("Support Group", url="https://t.me/codingdiscuss")
      ]])
-    welcomed = f"Hey <b>{message.from_user.first_name}\n\nI'm A Simple YouTube Video Downloader Bot With YouTube Video Thumbnail Support.\n\nPlease Send Me Any YouTube Video Link, I Can Upload It To Telegram As File, Audio Or Video Format.\n\nIf Found Any Bugs Then, You Can Report In Our Support Group !\n\nClick On /help For More Details....</b>"
-    await message.reply_photo(PglRobot_IMG.(welcomed,
+Fajis= "https://telegra.ph/file/f1d7b30b05ba9f0dbf4e5.jpg"
+
+    welcom = f"Hey <b>{message.from_user.first_name}\n\nI'm A Simple YouTube Video Downloader Bot With YouTube Video Thumbnail Support.\n\nPlease Send Me Any YouTube Video Link, I Can Upload It To Telegram As File, Audio Or Video Format.\n\nIf Found Any Bugs Then, You Can Report In Our Support Group !\n\nClick On /help For More Details....</b>"
+    await message.reply_photo(Fajis.(welcom,
 disable_web_page_preview=True, 
 reply_markup=joinButton)
     raise StopPropagation
